@@ -73,7 +73,7 @@ class AMP
         'Lullabot\AMP\Pass\StandardFixPassTwo',
         'Lullabot\AMP\Pass\MinimumValidFixPass',
         'Lullabot\AMP\Pass\StatisticsPass',
-        'Lullabot\AMP\Pass\PlaybuzzTagTransformPass'
+        'Lullabot\AMP\Pass\PlayBuzzTagTransformPass'
     ];
 
     /** @var ActionTakenLine[] */

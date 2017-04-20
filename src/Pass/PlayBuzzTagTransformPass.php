@@ -40,11 +40,11 @@ class PlayBuzzTagTransformPass extends BasePass
 
     function pass()
     {
-        $playbuzzElements = $this->q->find(DOM_SELECTOR);
+        $playbuzzElements = $this->q->find(self::DOM_SELECTOR);
 
         foreach ($playbuzzElements as $pb) {
             $pbDomElement = $pb->get(0);
-            $tagName = DOM_SELECTOR;
+            $tagName = self::DOM_SELECTOR;
             $lineNumber = $this->getLineNo($pbDomElement);
             $contextString = $this->getContextString($pbDomElement);
 
@@ -62,7 +62,7 @@ class PlayBuzzTagTransformPass extends BasePass
                 $lineNumber,
                 $contextString
             ));
-            $this->addLineAssociation($newPbDomElement, $lineNumber);
+            $this->context->addLineAssociation($newPbDomElement, $lineNumber);
         }
 
         return $this->transformations;
