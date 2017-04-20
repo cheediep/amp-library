@@ -24,7 +24,7 @@ use Lullabot\AMP\Utility\ActionTakenLine;
 use Lullabot\AMP\Utility\ActionTakenType;
 
 /**
- * Class IframeDailymotionTagTransformPass
+ * Class PlayBuzzTagTransformPass
  * @package Lullabot\AMP\Pass
  *
  * Sample PlayBuzz script code:
