@@ -55,4 +55,5 @@ class ActionTakenType
     const YOUTUBE_OBJECT_CONVERTED = 'youtube object code was converted to the amp-youtube tag.';
     const VIMEO_OBJECT_CONVERTED = 'vimeo object code was converted to the amp-vimeo tag.';
     const OBJECT_CONVERTED_TO_A = 'video object code was converted to a#href tag.';
+    const PLAYBUZZ_SCRIPT_CONVERTED = 'playbuzz script and container was converted to amp-playbuzz';
 }
