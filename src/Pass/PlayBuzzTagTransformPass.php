@@ -91,6 +91,8 @@ class PlayBuzzTagTransformPass extends BasePass
             $attributes['data-comments'] = $comments;
         }
 
+        $attributes['height'] = "500"; // Needs to be initiated with a height of 500
+
         return $attributes;
     }
 }
