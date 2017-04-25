@@ -5368,6 +5368,38 @@ class ValidationRulesFactory
         $o_1295->cdata = $o_1300;
         $o_0->tags[] = $o_1295;
         $o_0->error_formats[] = $o_1294;
+        $o_1302 = new TagSpec();
+        $o_1302->tag_name = 'script';
+        $o_1302->spec_name = 'amp-o2-player extension .js script';
+        $o_1302->mandatory_parent = 'head';
+        $o_1303 = new AttrSpec();
+        $o_1303->name = 'async';
+        $o_1303->mandatory = true;
+        $o_1303->value = '';
+        $o_1302->attrs[] = $o_1303;
+        $o_1304 = new AttrSpec();
+        $o_1304->name = 'custom-element';
+        $o_1304->mandatory = true;
+        $o_1304->value = 'amp-o2-player';
+        $o_1304->dispatch_key = true;
+        $o_1302->attrs[] = $o_1304;
+        $o_1305 = new AttrSpec();
+        $o_1305->name = 'src';
+        $o_1305->mandatory = true;
+        $o_1305->value_regex = 'https://cdn\\.ampproject\\.org/v0/amp-o2-player-(latest|0\\.1).js';
+        $o_1302->attrs[] = $o_1305;
+        $o_1306 = new AttrSpec();
+        $o_1306->name = 'type';
+        $o_1306->value = 'text/javascript';
+        $o_1302->attrs[] = $o_1306;
+        $o_1302->spec_url = 'https://www.ampproject.org/docs/reference/extended/amp-o2-player.html';
+        $o_1300 = new CdataSpec();
+        $o_1301 = new BlackListedCDataRegex();
+        $o_1301->regex = '.';
+        $o_1301->error_message = 'contents';
+        $o_1300->blacklisted_cdata_regex[] = $o_1301;
+        $o_1302->cdata = $o_1300;
+        $o_0->tags[] = $o_1302;
         return $o_0;
     }
 }
